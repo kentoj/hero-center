@@ -42,3 +42,10 @@ Commit after each step as needed.
 - `ng g c admin/admin-dashboard`
 - `ng g c admin/manage-heroes`
 - `ng g c cl admin/admin-routing.module`
+20. Update Admin components from Plunker example
+- admin-dashboard.component.html
+- admin-dashboard.component.ts
+- admin.component.html
+- admin.module.ts
+- manage-heroes.component.ts
+
