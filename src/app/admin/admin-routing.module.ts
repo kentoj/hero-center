@@ -3,15 +3,18 @@ import { NgModule } from "@angular/core";
 import { AdminDashboardComponent } from "./admin-dashboard/admin-dashboard.component";
 import { ManageHeroesComponent } from "./manage-heroes/manage-heroes.component";
 import { AdminComponent } from "./admin.component";
+import { AuthGuard } from "../auth-guard";
 
 
 const adminRoutes: Routes = [
   {
     path: '',
     component: AdminComponent,
+    canActivate: [AuthGuard],
     children: [
       {
         path: '',
+        canActivateChild: [AuthGuard],
         children: [
           { path: 'heroes', component: ManageHeroesComponent },
           { path: '', component: AdminDashboardComponent }
