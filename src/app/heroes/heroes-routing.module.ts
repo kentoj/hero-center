@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes } from "@angular/router";
+import { Routes, RouterModule } from "@angular/router";
+import { HeroListComponent } from "./hero-list/hero-list.component";
+import { HeroDetailComponent } from "./hero-detail/hero-detail.component";
 
 
 const heroesRoutes: Routes = [
@@ -11,8 +13,12 @@ const heroesRoutes: Routes = [
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(heroesRoutes)
   ],
-  declarations: []
+  declarations: [],
+  exports: [
+    RouterModule
+  ]
 })
 export class HeroesRoutingModule { }
