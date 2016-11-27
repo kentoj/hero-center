@@ -14,5 +14,7 @@ Commit after each step as needed.
 8. Open browser to https://angular.io/resources/live-examples/router/ts/plnkr.html
 9. Copy styles.css information from Plunker example to styles.css
 10. `ng g m heroes`
-11. 
+11. `ng g m heroes/heroes-routing`
+12. `mv src/app/heroes/heroes-routing/heroes-routing.module.ts src/app/heroes`
+13. `rm -rf src/app/heroes/heroes-routing`
 
