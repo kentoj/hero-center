@@ -26,7 +26,8 @@ Commit after each step as needed.
 - heroes.module.ts
 - heroes-routing.module.ts
 16. Generate the Hero components and update routing config
-- ng g c heroes/hero-list
-- ng g c heroes/hero-detail
-
+- `ng g c heroes/hero-list`
+- `ng g c heroes/hero-detail`
+17. Generate the heroes service and add to providers
+- 
 

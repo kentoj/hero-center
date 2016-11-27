@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from "@angular/router";
 import { HeroListComponent } from "./hero-list/hero-list.component";
 import { HeroDetailComponent } from "./hero-detail/hero-detail.component";
+import { HeroService } from "./hero.service";
 
 
 const heroesRoutes: Routes = [
@@ -19,6 +20,9 @@ const heroesRoutes: Routes = [
   declarations: [],
   exports: [
     RouterModule
+  ],
+  providers: [
+    HeroService
   ]
 })
 export class HeroesRoutingModule { }
