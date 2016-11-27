@@ -50,4 +50,11 @@ Commit after each step as needed.
 - manage-heroes.component.ts
 21. Add admin routing into application (leave out AuthGuard and login for now)
 - app-routing.module.ts
-- admin-routing.module.ts
+- admin-routing.module.ts **This is the first point at which lazy loading can be observed in this app.**
+22. Generate auth service, guard, login component, and routing
+- `ng g s auth`
+- `ng g cl auth-guard`
+- `ng g c login`
+- `ng g cl login-routing.module`
+
+
