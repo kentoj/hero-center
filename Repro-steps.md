@@ -40,3 +40,5 @@ Commit after each step as needed.
 19. Generate the admin module and components
 - `ng g m admin`
 - `ng g c admin/admin-dashboard`
+- `ng g c admin/manage-heroes`
+- `ng g c cl admin/admin-routing.module`
