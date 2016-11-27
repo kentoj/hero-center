@@ -37,5 +37,5 @@ Commit after each step as needed.
 - hero-detail.component.html
 - hero-detail.component.ts
 - heroes.module.ts
-
-
+19. Generate the admin module and components
+- `ng g m admin`
