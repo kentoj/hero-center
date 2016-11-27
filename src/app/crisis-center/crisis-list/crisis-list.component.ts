@@ -1,4 +1,8 @@
+import 'rxjs/add/operator/switchMap';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from "rxjs";
+import { Crisis, CrisisService } from "../crisis.service";
+import { ActivatedRoute, Router, Params } from "@angular/router";
 
 @Component({
   selector: 'app-crisis-list',
@@ -7,9 +11,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrisisListComponent implements OnInit {
 
-  constructor() { }
+  crises: Observable<Crisis[]>;
+  selectedId: number;
+
+  constructor(
+    private service: CrisisService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
+
+  isSelected(crisis: Crisis) {
+    return crisis.id === this.selectedId;
+  }
 
   ngOnInit() {
+    this.crises = this.route.params
+      .switchMap((params: Params) => {
+        this.selectedId = +params['id'];
+        return this.service.getCrises();
+      });
+  }
+
+  onSelect(crisis: Crisis) {
+    this.selectedId = crisis.id;
+
+    // Navigate with relative link
+    this.router.navigate([crisis.id], { relativeTo: this.route });
   }
 
 }

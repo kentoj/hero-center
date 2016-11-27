@@ -78,5 +78,18 @@ Bonus: Crisis Center
 - `ng g s crisis-center/crisis-detail-resolve`
 - `ng g cl crisis-center/crisis-center-routing.module`
 - `ng g s dialog`
+26. Update crisis components from Plunker example.
+- crisis.service.ts
+- crisis-center-home.component.html
+- crisis-center-routing.module.ts
+- crisis-center.component.html
+- crisis-center.module.ts
+- crisis-detail-resolve.service.spec.ts
+- crisis-detail-resolve.service.ts
+- crisis-detail.component.css
+- crisis-detail.component.html
+- crisis-detail.component.ts
+- crisis-list.component.html
+- crisis-list.component.ts
 
 
