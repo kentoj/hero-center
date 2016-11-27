@@ -56,5 +56,15 @@ Commit after each step as needed.
 - `ng g cl auth-guard`
 - `ng g c login`
 - `ng g cl login-routing.module`
+23. Update Auth and login components from Plunker example
+- auth.service.ts
+- auth-guard.ts
+- login.component.html
+- login.component.ts
+- login-routing.module.ts
+24. Protect admin routes with AuthGuard
+- app-routing.module.ts
+- admin-routing.module.ts
+
 
 
