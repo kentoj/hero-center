@@ -68,5 +68,15 @@ Commit after each step as needed.
 - admin-routing.module.ts
 - **Now route navigation is protected with a guard**
 
+Bonus: Crisis Center
+25. Generate Crisis center module, components, services, routing
+- `ng g m crisis-center`
+- `ng g s crisis-center/crisis`
+- `ng g c crisis-center/crisis-center-home`
+- `ng g c crisis-center/crisis-list`
+- `ng g c crisis-center/crisis-detail`
+- `ng g s crisis-center/crisis-detail-resolve`
+- `ng g cl crisis-center/crisis-center-routing.module`
+- `ng g s dialog`
 
 

@@ -8,6 +8,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { HeroesModule } from "./heroes/heroes.module";
 import { LoginComponent } from './login/login.component';
 import { LoginRoutingModule } from "./login-routing.module";
+import { DialogService } from "./dialog.service";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { LoginRoutingModule } from "./login-routing.module";
     HeroesModule,
     LoginRoutingModule
   ],
-  providers: [],
+  providers: [
+    DialogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
