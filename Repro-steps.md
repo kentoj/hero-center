@@ -48,4 +48,6 @@ Commit after each step as needed.
 - admin.component.html
 - admin.module.ts
 - manage-heroes.component.ts
-
+21. Add admin routing into application (leave out AuthGuard and login for now)
+- app-routing.module.ts
+- admin-routing.module.ts

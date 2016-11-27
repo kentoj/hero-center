@@ -3,6 +3,10 @@ import { NgModule } from "@angular/core";
 
 const appRoutes: Routes = [
   {
+    path: 'admin',
+    loadChildren: 'app/admin/admin.module#AdminModule',
+  },
+  {
     path: '',
     redirectTo: '/heroes',
     pathMatch: 'full'
