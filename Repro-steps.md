@@ -29,5 +29,13 @@ Commit after each step as needed.
 - `ng g c heroes/hero-list`
 - `ng g c heroes/hero-detail`
 17. Generate the heroes service and add to providers
-- 
+- `ng g s heroes/hero`
+18. Update Hero service and components from Plunker example
+- hero.service.ts
+- hero-list.component.html
+- hero-list.component.ts
+- hero-detail.component.html
+- hero-detail.component.ts
+- heroes.module.ts
+
 
