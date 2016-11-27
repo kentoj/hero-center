@@ -91,5 +91,8 @@ Bonus: Crisis Center
 - crisis-detail.component.ts
 - crisis-list.component.html
 - crisis-list.component.ts
+27. Add routing to crisis module
+- app-routing.module.ts
+- **Now you can see the second bundle being lazily loaded. The bundles are named something like 0.chunk.js and 1.chunk.js**
 
 

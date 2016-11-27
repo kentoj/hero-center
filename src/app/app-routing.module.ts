@@ -13,6 +13,10 @@ const appRoutes: Routes = [
     redirectTo: '/heroes',
     pathMatch: 'full'
   },
+  {
+    path: 'crisis-center',
+    loadChildren: 'app/crisis-center/crisis-center.module#CrisisCenterModule'
+  }
 ];
 
 @NgModule({
