@@ -17,4 +17,15 @@ Commit after each step as needed.
 11. `ng g m heroes/heroes-routing`
 12. `mv src/app/heroes/heroes-routing/heroes-routing.module.ts src/app/heroes`
 13. `rm -rf src/app/heroes/heroes-routing`
+14. `ng g cl app-routing.module`
+15. Update Heroes files from the Plunker example:
+- app.component.html
+- app.component.ts
+- app.module.ts
+- app-routing.module.ts
+- heroes.module.ts
+- heroes-routing.module.ts
+16. Generate the Hero components
+- ng g c heroes/hero-list
+
 
