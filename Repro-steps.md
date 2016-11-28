@@ -19,81 +19,81 @@ Commit after each step as needed.
 13. `rm -rf src/app/heroes/heroes-routing`
 14. `ng g cl app-routing.module`
 15. Update Heroes files from the Plunker example:
-- app.component.html
-- app.component.ts
-- app.module.ts
-- app-routing.module.ts
-- heroes.module.ts
-- heroes-routing.module.ts
+  - app.component.html
+  - app.component.ts
+  - app.module.ts
+  - app-routing.module.ts
+  - heroes.module.ts
+  - heroes-routing.module.ts
 16. Generate the Hero components and update routing config
-- `ng g c heroes/hero-list`
-- `ng g c heroes/hero-detail`
+  - `ng g c heroes/hero-list`
+  - `ng g c heroes/hero-detail`
 17. Generate the heroes service and add to providers
-- `ng g s heroes/hero`
+  - `ng g s heroes/hero`
 18. Update Hero service and components from Plunker example
-- hero.service.ts
-- hero-list.component.html
-- hero-list.component.ts
-- hero-detail.component.html
-- hero-detail.component.ts
-- heroes.module.ts
+  - hero.service.ts
+  - hero-list.component.html
+  - hero-list.component.ts
+  - hero-detail.component.html
+  - hero-detail.component.ts
+  - heroes.module.ts
 19. Generate the admin module and components
-- `ng g m admin`
-- `ng g c admin/admin-dashboard`
-- `ng g c admin/manage-heroes`
-- `ng g c cl admin/admin-routing.module`
+  - `ng g m admin`
+  - `ng g c admin/admin-dashboard`
+  - `ng g c admin/manage-heroes`
+  - `ng g c cl admin/admin-routing.module`
 20. Update Admin components from Plunker example
-- admin-dashboard.component.html
-- admin-dashboard.component.ts
-- admin.component.html
-- admin.module.ts
-- manage-heroes.component.ts
+  - admin-dashboard.component.html
+  - admin-dashboard.component.ts
+  - admin.component.html
+  - admin.module.ts
+  - manage-heroes.component.ts
 21. Add admin routing into application (leave out AuthGuard and login for now)
-- app-routing.module.ts
-- admin-routing.module.ts 
-- **This is the first point at which lazy loading can be observed in this app.**
+  - app-routing.module.ts
+  - admin-routing.module.ts 
+  - **This is the first point at which lazy loading can be observed in this app.**
 22. Generate auth service, guard, login component, and routing
-- `ng g s auth`
-- `ng g cl auth-guard`
-- `ng g c login`
-- `ng g cl login-routing.module`
+  - `ng g s auth`
+  - `ng g cl auth-guard`
+  - `ng g c login`
+  - `ng g cl login-routing.module`
 23. Update Auth and login components from Plunker example
-- auth.service.ts
-- auth-guard.ts
-- login.component.html
-- login.component.ts
-- login-routing.module.ts
+  - auth.service.ts
+  - auth-guard.ts
+  - login.component.html
+  - login.component.ts
+  - login-routing.module.ts
 24. Protect admin routes with AuthGuard
-- app-routing.module.ts
-- admin-routing.module.ts
-- **Now route navigation is protected with a guard**
+  - app-routing.module.ts
+  - admin-routing.module.ts
+  - **Now route navigation is protected with a guard**
 
-Bonus: Crisis Center
+### Bonus: Crisis Center
 25. Generate Crisis center module, components, services, routing
-- `ng g m crisis-center`
-- `ng g s crisis-center/crisis`
-- `ng g c crisis-center/crisis-center-home`
-- `ng g c crisis-center/crisis-list`
-- `ng g c crisis-center/crisis-detail`
-- `ng g s crisis-center/crisis-detail-resolve`
-- `ng g cl crisis-center/crisis-center-routing.module`
-- `ng g s dialog`
+  - `ng g m crisis-center`
+  - `ng g s crisis-center/crisis`
+  - `ng g c crisis-center/crisis-center-home`
+  - `ng g c crisis-center/crisis-list`
+  - `ng g c crisis-center/crisis-detail`
+  - `ng g s crisis-center/crisis-detail-resolve`
+  - `ng g cl crisis-center/crisis-center-routing.module`
+  - `ng g s dialog`
 26. Update crisis components from Plunker example.
-- crisis.service.ts
-- crisis-center-home.component.html
-- crisis-center-routing.module.ts
-- crisis-center.component.html
-- crisis-center.module.ts
-- crisis-detail-resolve.service.spec.ts
-- crisis-detail-resolve.service.ts
-- crisis-detail.component.css
-- crisis-detail.component.html
-- crisis-detail.component.ts
-- crisis-list.component.html
-- crisis-list.component.ts
+  - crisis.service.ts
+  - crisis-center-home.component.html
+  - crisis-center-routing.module.ts
+  - crisis-center.component.html
+  - crisis-center.module.ts
+  - crisis-detail-resolve.service.spec.ts
+  - crisis-detail-resolve.service.ts
+  - crisis-detail.component.css
+  - crisis-detail.component.html
+  - crisis-detail.component.ts
+  - crisis-list.component.html
+  - crisis-list.component.ts
 27. Add routing to crisis module
-- app-routing.module.ts
-- **Now you can see the second bundle being lazily loaded. The bundles are named something like 0.chunk.js and 1.chunk.js**
+  - app-routing.module.ts
+  - **Now you can see the second bundle being lazily loaded. The bundles are named something like 0.chunk.js and 1.chunk.js**
 
 
 Second Bonus: Dockerized Deployment
