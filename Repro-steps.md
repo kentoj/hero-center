@@ -96,7 +96,7 @@ Commit after each step as needed.
   - **Now you can see the second bundle being lazily loaded. The bundles are named something like 0.chunk.js and 1.chunk.js**
 
 
-Second Bonus: Dockerized Deployment
+### Second Bonus: Dockerized Deployment
 28. Create the `Dockerfile`
 29. Create the nginx default config to redirect all requests to the root '/' so every request will be handled by the Angular 2 router.
 
