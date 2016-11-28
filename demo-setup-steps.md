@@ -12,6 +12,11 @@ This includes installing NPM packages which could take a while
 5. Open the angular.io official router documentatino Plunker example [here](https://angular.io/resources/live-examples/router/ts/plnkr.html)
 6. Download the plunker example as a zip.
 7. Have the plunker code open in a text editor or IDE so copy/paste is fast.
+8. Go to the directory you want to use for the demo project and generate the app
+  - `ng new hero-center --skip-npm`
+9. `cd hero-center`
+10. Install dependencies with yarn or npm. This may take between 5 and 20 minutes depending on your internet speed, hopefully not longer.
+  - `yarn` (or `npm install` if using npm) and change default port in package.json start script.
 
 
 If on windows I highly recommend installing Git-bash or Bash on Ubuntu on Windows [here](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) 
